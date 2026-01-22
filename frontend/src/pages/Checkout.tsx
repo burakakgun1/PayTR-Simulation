@@ -84,8 +84,6 @@ const Checkout = () => {
         } catch (error: any) {
             console.error('Payment Error:', error);
             alert(error.response?.data?.message || 'Payment Initialization Failed');
-        } finally {
-            setIsLoading(false);
         }
     };
 
